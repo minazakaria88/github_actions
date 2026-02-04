@@ -1,6 +1,7 @@
 import 'package:flower/generated/assets.dart';
 import 'package:flower/home_screen.dart';
 import 'package:flower/on_boarding_model.dart';
+import 'package:flower_pac/flower_pac.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -25,6 +26,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
       backgroundColor: Colors.white,
       body: Column(
         children: [
+          buildText('text'),
           SizedBox(height: 60),
           OnBoardingHeaderWidget(controller: controller),
           Expanded(
